@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDX Team - Elite Roblox Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-text">RDX</h1>
+                <span class="logo-subtitle">TEAM</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-tab="introduction">Introduction</button>
+                <button class="nav-btn" data-tab="hire">Hire</button>
+                <button class="nav-btn" data-tab="support">Support</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Moving Belt -->
+    <div class="moving-belt">
+        <div class="belt-content">
+            <span>RDX WEB</span>
+            <span>RDX ADMIN</span>
+            <span>RDX GAMES</span>
+            <span>RDX DEV</span>
+            <span>RDX WEB</span>
+            <span>RDX ADMIN</span>
+            <span>RDX GAMES</span>
+            <span>RDX DEV</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Introduction Tab -->
+        <section class="tab-content active" id="introduction">
+            <div class="container">
+                <div class="hero">
+                    <h2 class="hero-title">Elite Roblox Development Team</h2>
+                    <p class="hero-subtitle">Pushing the boundaries of gaming excellence</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" id="visits-counter">0</div>
+                            <div class="stat-label">Total Visits</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="players-counter">0</div>
+                            <div class="stat-label">Current Players</div>
+                        </div>
+                    </div>
+
+                    <div class="partnerships">
+                        <h3 class="partnerships-title">Trusted Partners</h3>
+                        <div class="partners-grid">
+                            <div class="partner-card">
+                                <div class="partner-name">Rivals</div>
+                                <div class="partner-type">Combat Game</div>
+                            </div>
+                            <div class="partner-card">
+                                <div class="partner-name">Ninja Legends</div>
+                                <div class="partner-type">Adventure RPG</div>
+                            </div>
+                            <div class="partner-card">
+                                <div class="partner-name">Murder Vs Sheriff</div>
+                                <div class="partner-type">Mystery Game</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hire Tab -->
+        <section class="tab-content" id="hire">
+            <div class="container">
+                <div class="hire-content">
+                    <h2 class="section-title">Join Our Elite Team</h2>
+                    <p class="section-subtitle">Ready to create the next gaming revolution?</p>
+                    
+                    <div class="terms-notice">
+                        <div class="notice-icon">⚠️</div>
+                        <p>You need to agree to terms and conditions before hiring.</p>
+                    </div>
+
+                    <div class="terms-buttons">
+                        <button class="btn btn-primary" id="agree-btn">Agree</button>
+                        <button class="btn btn-secondary" id="terms-btn">Read Terms</button>
+                    </div>
+
+                    <div class="contact-form" id="contact-form" style="display: none;">
+                        <h3>Contact Information</h3>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="discord">Discord Username</label>
+                            <input type="text" id="discord" placeholder="YourUsername#1234">
+                        </div>
+                        <button class="btn btn-primary submit-btn">Submit Application</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Tab -->
+        <section class="tab-content" id="support">
+            <div class="container">
+                <div class="support-content">
+                    <h2 class="section-title">24/7 Support Center</h2>
+                    <p class="section-subtitle">Our support team will contact you within 48 hours</p>
+                    
+                    <div class="support-grid">
+                        <a href="#" class="support-card youtube">
+                            <div class="support-icon">📺</div>
+                            <div class="support-name">YouTube</div>
+                            <div class="support-desc">Video Tutorials</div>
+                        </a>
+                        <a href="#" class="support-card discord">
+                            <div class="support-icon">💬</div>
+                            <div class="support-name">Discord</div>
+                            <div class="support-desc">Live Chat</div>
+                        </a>
+                        <a href="#" class="support-card gmail">
+                            <div class="support-icon">📧</div>
+                            <div class="support-name">Gmail</div>
+                            <div class="support-desc">Email Support</div>
+                        </a>
+                        <a href="#" class="support-card outlook">
+                            <div class="support-icon">📮</div>
+                            <div class="support-name">Outlook</div>
+                            <div class="support-desc">Business Email</div>
+                        </a>
+                    </div>
+
+                    <div class="response-time">
+                        <div class="response-icon">⏱️</div>
+                        <div class="response-text">
+                            <h4>Guaranteed Response</h4>
+                            <p>Our expert team responds within 48 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Terms Modal -->
+    <div class="modal" id="terms-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Terms and Conditions</h3>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4>RDX Team Hiring Terms</h4>
+                <p>1. All applicants must have proven experience in Roblox development.</p>
+                <p>2. Commitment to quality and innovation is required.</p>
+                <p>3. Team collaboration and communication skills are essential.</p>
+                <p>4. Confidentiality agreements must be signed for all projects.</p>
+                <p>5. Flexible working hours with project deadlines.</p>
+                <p>6. Revenue sharing based on contribution and role.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="modal-agree">I Agree</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
